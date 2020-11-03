@@ -4,7 +4,6 @@ namespace App\Libraries;
 
 use App\Models\CrudModel;
 use CodeIgniter\HTTP\RequestInterface;
-
 class Crud_core
 {
     protected $schema, // table schema
@@ -234,7 +233,7 @@ class Crud_core
         $table .= '</tbody></table></div>';
         $table .= '<div class="card-footer clearfix">';
         if ($this->request->getPost('table_search')) {
-            $table .= '<a href="' . $this->base . '/' . $this->table . '" class="btn btn-warning btn-xs"><i class="fa fa-times"></i> Clear filters</a>';
+            $table .= '<a href="' . $this->base . '/' . $this->table . '" class="btn btn-warning btn-xs"><i class="fa fa-times"></i> Clear Search Filters</a>';
         }
         //$this->ci->pagination->create_links()
 

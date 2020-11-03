@@ -47,8 +47,8 @@ class Users extends BaseController
         }
 
         $per_page = 20;
-        $columns  = ['u_firstname', 'u_lastname', 'u_email', 'u_status'];
-        $where    = null;
+        $columns  = ['u_id', 'u_firstname', 'u_lastname', 'u_email', 'u_status'];
+        $where    = null ; // ['u_status' => 'Active'];
         $order    = [
             ['u_id', 'ASC'],
         ];
@@ -62,8 +62,13 @@ class Users extends BaseController
     {
         $fields = [];
 
+        $fields['u_id']        = ['label' => "User ID"];
         $fields['u_firstname'] = ['label' => 'First Name'];
         $fields['u_lastname']  = ['label' => 'Last Name'];
+        $fields['u_status']    = ['label' => 'Status'];
+        $fields['u_email']     = ['label' => 'Email'];
+
+        return $fields;
     }
 
 }
