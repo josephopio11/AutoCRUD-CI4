@@ -4,9 +4,9 @@ class Users extends BaseController
 {
 	public function index()
 	{
-		return view('admin/users/table');
+		$data['title'] = 'Users';
+		$data['table'] = '';
+		return view('admin/users/table', $data);
 	}
-
-	//--------------------------------------------------------------------
 
 }

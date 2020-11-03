@@ -1,1 +1,3 @@
- <h1>dashboard file</h1>
+<?=$this->extend('admin/layouts/main')?>
+<?=$this->section('content')?>
+<?=$this->endSection()?>

@@ -1,1 +1,4 @@
-<h1>Users table</h1>
+<?=$this->extend('admin/layouts/main')?>
+<?=$this->section('content')?>
+<?=$table?>
+<?=$this->endSection()?>
