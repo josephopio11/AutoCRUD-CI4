@@ -1,10 +1,10 @@
 <?php namespace App\Controllers;
 
-class Admin extends BaseController
+class Users extends BaseController
 {
 	public function index()
 	{
-		return view('admin/dashboard');
+		return view('admin/users/table');
 	}
 
 	//--------------------------------------------------------------------
