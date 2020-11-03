@@ -16,6 +16,8 @@ More information about the plans for version 4 can be found in [the announcement
 
 The user guide corresponding to this version of the framework can be found
 [here](https://codeigniter4.github.io/userguide/). 
+## About Me
+My name is [Joseph Opio](https://www.josephopio.com). Check out my site to find a log of information about me. Have a great day everyone
 
 thanks
 
